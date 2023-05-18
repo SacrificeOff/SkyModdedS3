@@ -1,428 +1,1308 @@
 {
-    "version": "1.0.0",
-    "discord": {
-        "clientId": "385581240906022916",
-        "smallImageText": "Newzen",
-        "smallImageKey": "seal-circle"
-    },
-    "java": {
-        "oracle": "http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html"
-    },
-    "rss": "https://forum.westeroscraft.com/forum/news.2/index.rss",
-    "servers": [
+  "version": "1.0.0",
+  "rss": "<LINK TO RSS FEED>",
+  "discord": {
+    "clientId": "<FILL IN OR REMOVE DISCORD OBJECT>",
+    "smallImageText": "<FILL IN OR REMOVE DISCORD OBJECT>",
+    "smallImageKey": "<FILL IN OR REMOVE DISCORD OBJECT>"
+  },
+  "servers": [
+    {
+      "id": "SkyModdedS3-1.19.2",
+      "name": "SkyModdedS3 (Minecraft 1.19.2)",
+      "description": "SkyModdedS3 Running Minecraft 1.19.2 (Forge v43.2.0)",
+      "icon": null,
+      "version": "1.0.0",
+      "address": "localhost:25565",
+      "minecraftVersion": "1.19.2",
+      "discord": {
+        "shortId": "<FILL IN OR REMOVE DISCORD OBJECT>",
+        "largeImageText": "<FILL IN OR REMOVE DISCORD OBJECT>",
+        "largeImageKey": "<FILL IN OR REMOVE DISCORD OBJECT>"
+      },
+      "mainServer": false,
+      "autoconnect": false,
+      "modules": [
         {
-            "id": "Newzen-1.15.2",
-            "name": "Newzen",
-            "description": "Serveur Pvp Faction Moddé",
-            "icon": "https://cdn.discordapp.com/attachments/716647002766835762/767410930216075274/N.png",
-            "version": "1.0.0",
-            "address": "play.excaliamc.fr",
-            "minecraftVersion": "1.15.2",
-            "discord": {
-                "shortId": "Production",
-                "largeImageText": "Newzen Server",
-                "largeImageKey": "server-prod"
+          "id": "net.minecraftforge:lowcodelanguage:1.19.2-43.2.0",
+          "name": "Minecraft Forge (lowcodelanguage)",
+          "type": "ForgeHosted",
+          "classpath": true,
+          "artifact": {
+            "size": 7377,
+            "MD5": "1b5bf558c8f69d9bb3d8530d047efda7",
+            "url": "https://minecorp-mc.fr/nebula/repo/lib/net/minecraftforge/lowcodelanguage/1.19.2-43.2.0/lowcodelanguage-1.19.2-43.2.0.jar"
+          },
+          "subModules": [
+            {
+              "id": "1.19.2-43.2.0",
+              "name": "Minecraft Forge (version.json)",
+              "type": "VersionManifest",
+              "artifact": {
+                "size": 15497,
+                "MD5": "3241f316ae8dbfc8d60c1bcdb59db6d1",
+                "url": "https://minecorp-mc.fr/nebula/repo/versions/1.19.2-forge-43.2.0/1.19.2-forge-43.2.0.json"
+              }
             },
-            "mainServer": true,
-            "autoconnect": true,
-            "modules": [
-                {
-                    "id": "net.minecraftforge:forge:1.11.2-13.20.1.2429",
-                    "name": "Minecraft Forge",
-                    "type": "ForgeHosted",
-                    "artifact": {
-                        "size": 4450992,
-                        "MD5": "3fcc9b0104f0261397d3cc897e55a1c5",
-                        "url": "http://files.minecraftforge.net/maven/net/minecraftforge/forge/1.11.2-13.20.1.2429/forge-1.11.2-13.20.1.2429-universal.jar"
-                    },
-                    "subModules": [
-                        {
-                            "id": "net.minecraft:launchwrapper:1.12",
-                            "name": "Mojang (LaunchWrapper)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 32999,
-                                "MD5": "934b2d91c7c5be4a49577c9e6b40e8da",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/launchwrapper-1.12.jar"
-                            }
-                        },
-                        {
-                            "id": "org.ow2.asm:asm-all:5.0.3",
-                            "name": "Mojang (ASM)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 241639,
-                                "MD5": "c5cc4613bbdfba3ccf5f0ab85390d0b8",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/asm-all-5.0.3.jar"
-                            }
-                        },
-                        {
-                            "id": "org.scala-lang:scala-library:2.11.1@jar.pack.xz",
-                            "name": "Minecraft Forge (scala-library)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 1474672,
-                                "MD5": "379c15c4f724421c6d5d7aecedaf87a6",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/scala-library-2.11.1.jar.pack.xz"
-                            }
-                        },
-                        {
-                            "id": "org.scala-lang:scala-compiler:2.11.1@jar.pack.xz",
-                            "name": "Minecraft Forge (scala-compiler)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 3076920,
-                                "MD5": "7d89e952f2d5c74577310cd2c28e3f20",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/scala-compiler-2.11.1.jar.pack.xz"
-                            }
-                        },
-                        {
-                            "id": "org.scala-lang:scala-actors-migration_2.11:1.1.0@jar.pack.xz",
-                            "name": "Minecraft Forge (scala-actors-migration)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 21324,
-                                "MD5": "04e3428b2600ace33c7ae2bf1f6c0a4c",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/scala-actors-migration_2.11-1.1.0.jar.pack.xz"
-                            }
-                        },
-                        {
-                            "id": "org.scala-lang.plugins:scala-continuations-library_2.11:1.0.2@jar.pack.xz",
-                            "name": "Minecraft Forge (scala-continuations-library)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 7956,
-                                "MD5": "ed9b1d27aba8ac4090a3749c4dfc895a",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/scala-continuations-library_2.11-1.0.2.jar.pack.xz"
-                            }
-                        },
-                        {
-                            "id": "org.scala-lang.plugins:scala-continuations-plugin_2.11.1:1.0.2@jar.pack.xz",
-                            "name": "Minecraft Forge (scala-continuations-plugin)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 46140,
-                                "MD5": "a8232db22a72a981de6b1399eb86dff7",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/scala-continuations-plugin_2.11.1-1.0.2.jar.pack.xz"
-                            }
-                        },
-                        {
-                            "id": "org.scala-lang:scala-parser-combinators_2.11:1.0.1@jar.pack.xz",
-                            "name": "Minecraft Forge (scala-parser-combinators)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 85568,
-                                "MD5": "2e50a7df17680daadacca69f07f8a16d",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/scala-parser-combinators_2.11-1.0.1.jar.pack.xz"
-                            }
-                        },
-                        {
-                            "id": "org.scala-lang:scala-reflect:2.11.1@jar.pack.xz",
-                            "name": "Minecraft Forge (scala-reflect)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 1070312,
-                                "MD5": "84e5dc81c10e2bd74c579c9d0332fdd9",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/scala-reflect-2.11.1.jar.pack.xz"
-                            }
-                        },
-                        {
-                            "id": "org.scala-lang:scala-swing_2.11:1.0.1",
-                            "name": "Minecraft Forge (scala-swing)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 736795,
-                                "MD5": "1d360289e697022a3f57abaad344b28f",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/scala-swing_2.11-1.0.1.jar"
-                            }
-                        },
-                        {
-                            "id": "org.scala-lang:scala-xml_2.11:1.0.2@jar.pack.xz",
-                            "name": "Minecraft Forge (scala-xml)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 217812,
-                                "MD5": "cc891b094a4c32dedc56bfefe9b072ff",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/scala-xml_2.11-1.0.2.jar.pack.xz"
-                            }
-                        },
-                        {
-                            "id": "com.typesafe.akka:akka-actor_2.11:2.3.3@jar.pack.xz",
-                            "name": "Minecraft Forge (akka-actor)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 746612,
-                                "MD5": "25cb22c3078e9fb3f7a861c912924862",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/akka-actor_2.11-2.3.3.jar.pack.xz"
-                            }
-                        },
-                        {
-                            "id": "com.typesafe:config:1.2.1@jar.pack.xz",
-                            "name": "Minecraft Forge (typesafe-config)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 56636,
-                                "MD5": "10ec4ccabc4e68aac9cf87165ead5d7d",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/config-1.2.1.jar.pack.xz"
-                            }
-                        },
-                        {
-                            "id": "lzma:lzma:0.0.1",
-                            "name": "Mojang (LZMA)",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 5762,
-                                "MD5": "a3e3c3186e41c4a1a3027ba2bb23cdc6",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/lzma-0.0.1.jar"
-                            }
-                        },
-                        {
-                            "id": "net.sf.trove4j:trove4j:3.0.3",
-                            "name": "Trove4J",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 2523218,
-                                "MD5": "8fc4d4e0129244f9fd39650c5f30feb2",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/trove4j-3.0.3.jar"
-                            }
-                        },
-                        {
-                            "id": "java3d:vecmath:1.5.2",
-                            "name": "Vecmath",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 318956,
-                                "MD5": "e5d2b7f46c4800a32f62ce75676a5710",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/vecmath-1.5.2.jar"
-                            }
-                        },
-                        {
-                            "id": "net.sf.jopt-simple:jopt-simple:4.6",
-                            "name": "Jopt-simple",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 62477,
-                                "MD5": "13560a58a79b46b82057686543e8d727",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/jopt-simple-4.6.jar"
-                            }
-                        },
-                        {
-                            "id": "net.minecraftforge:MercuriusUpdater:1.11.2",
-                            "name": "MercuriusUpdater",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 15146,
-                                "MD5": "7556d06064ebbfa3b334a15092d725d0",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/MercuriusUpdater-1.11.2.jar"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "id": "com.westeroscraft:westerosblocks:3.2.0-beta-1-190",
-                    "name": "WesterosBlocks",
-                    "type": "ForgeMod",
-                    "artifact": {
-                        "size": 17376788,
-                        "MD5": "370f4f1804c93f498f31af8dac509605",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/prod-1.11.2/mods/WesterosBlocks.jar"
-                    }
-                },
-                {
-                    "id": "com.westeroscraft:westeroscraftrp:2019-01-21",
-                    "name": "WesterosCraft Resource Pack",
-                    "type": "File",
-                    "artifact": {
-                        "size": 46999843,
-                        "MD5": "309eb9e5296e9f55cfecb7d4058245a4",
-                        "path": "resourcepacks/WesterosCraft.zip",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/prod-1.11.2/resourcepacks/WesterosCraft.zip"
-                    }
-                },
-                {
-                    "id": "net.optifine:optifine:1.11.2_HD_U_C7",
-                    "name": "Optifine",
-                    "type": "ForgeMod",
-                    "artifact": {
-                        "size": 2254712,
-                        "MD5": "0dd7761e908f9b245bb0dc0fac5649f5",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/prod-1.11.2/mods/OptiFine.jar"
-                    }
-                },
-                {
-                    "id": "mezz:jei:1.11.2-4.5.0.290",
-                    "name": "JustEnoughItems",
-                    "type": "ForgeMod",
-                    "artifact": {
-                        "size": 538740,
-                        "MD5": "f4d931f6db6210621a86fa1e7eae8016",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/prod-1.11.2/mods/jei.jar"
-                    }
-                },
-                {
-                    "id": "org.blockartistry:dynsurround:1.11.2-3.4.9.3",
-                    "name": "DynamicSurroundings",
-                    "type": "ForgeMod",
-                    "required": {
-                        "value": false
-                    },
-                    "artifact": {
-                        "size": 22291385,
-                        "MD5": "65403c66d8b3655b372f58047941d206",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/prod-1.11.2/mods/DynamicSurroundings.jar"
-                    },
-                    "subModules": [
-                        {
-                            "id": "dsurround.cfg",
-                            "name": "DynamicSurroundings General Configuration File",
-                            "type": "File",
-                            "artifact": {
-                                "size": 20258,
-                                "path": "/config/dsurround/dsurround.cfg",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/prod-1.11.2/config/dsurround/dsurround.cfg"
-                            }
-                        },
-                        {
-                            "id": "westeros.json",
-                            "name": "DynamicSurroundings WesterosCraft Configuration File",
-                            "type": "File",
-                            "artifact": {
-                                "size": 608,
-                                "MD5": "44eab112ff24d0bd29974c270de868ba",
-                                "path": "/config/dsurround/westeros.json",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/prod-1.11.2/config/dsurround/westeros.json"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "id": "octarine-noise:betterfoliage:1.11.2-2.1.10",
-                    "name": "BetterFoliage",
-                    "type": "ForgeMod",
-                    "required": {
-                        "value": false
-                    },
-                    "artifact": {
-                        "size": 4675903,
-                        "MD5": "522fdf73b6e4343cb6243872fb7b4b6c",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/prod-1.11.2/mods/BetterFoliage.jar"
-                    },
-                    "subModules": [
-                        {
-                            "id": "betterfoliage.cfg",
-                            "name": "BetterFoliage Configuration File",
-                            "type": "File",
-                            "artifact": {
-                                "size": 7878,
-                                "MD5": "6dd38f873c4129af05a2d6c500cbe954",
-                                "path": "/config/betterfoliage.cfg",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/prod-1.11.2/config/betterfoliage.cfg"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "id": "techbrew:journeymap:1.11.2-5.4.7",
-                    "name": "JourneyMap",
-                    "type": "ForgeMod",
-                    "required": {
-                        "value": false
-                    },
-                    "artifact": {
-                        "size": 1735525,
-                        "MD5": "1c3380502eb7b9a495581b2402d144df",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/prod-1.11.2/mods/journeymap.jar"
-                    }
-                },
-                {
-                    "id": "com.github.hexomod:worldeditcuife2:2.1.1-mf-1.11.2-13.20.0.2228",
-                    "name": "WorldEditCUI",
-                    "type": "ForgeMod",
-                    "required": {
-                        "value": false
-                    },
-                    "artifact": {
-                        "size": 461691,
-                        "MD5": "439f82b69f3464969163c188818c677b",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/prod-1.11.2/mods/worldeditcuife.jar"
-                    }
-                },
-                {
-                    "id": "mcp.mobius:waila:1.7.1_1.11.2",
-                    "name": "Waila",
-                    "type": "ForgeMod",
-                    "required": {
-                        "value": false
-                    },
-                    "artifact": {
-                        "size": 542744,
-                        "MD5": "26258a3557bf333e8f4ce8b1e9481031",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/prod-1.11.2/mods/Waila.jar"
-                    }
-                },
-                {
-                    "id": "com.mumfrey:liteloader:1.11.2",
-                    "name": "Liteloader",
-                    "type": "LiteLoader",
-                    "required": {
-                        "value": false,
-                        "def": false
-                    },
-                    "artifact": {
-                        "size": 1685422,
-                        "MD5": "3a98b5ed95810bf164e71c1a53be568d",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/1.11.2/liteloader.jar"
-                    },
-                    "subModules": [
-                        {
-                            "id": "com.mumfrey:macrokeybindmod:0.14.4-1.11.2@litemod",
-                            "name": "Macro/Keybind Mod",
-                            "type": "LiteMod",
-                            "required": {
-                                "value": false,
-                                "def": false
-                            },
-                            "artifact": {
-                                "size": 1670811,
-                                "MD5": "16080785577b391d426c62c8d3138558",
-                                "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/prod-1.11.2/mods/macrokeybindmod.litemod"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "id": "com.sonicether:seus:11.0",
-                    "name": "Sonic Ether's Unbelievable Shaders",
-                    "type": "File",
-                    "artifact": {
-                        "size": 175159,
-                        "MD5": "bfa8c31d1da8131b59917bb2460205b1",
-                        "path": "shaderpacks/SEUS v11.0.zip",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/prod-1.11.2/shaderpacks/SEUS.zip"
-                    }
-                },
-                {
-                    "id": "options.txt",
-                    "name": "Default Client Options",
-                    "type": "File",
-                    "artifact": {
-                        "size": 1973,
-                        "path": "options.txt",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/files/options-1.11.2.txt"
-                    }
-                },
-                {
-                    "id": "servers.dat",
-                    "name": "Saved Client Servers",
-                    "type": "File",
-                    "artifact": {
-                        "size": 84,
-                        "MD5": "71d99e229d7d2b8d2a6423e46832a4b8",
-                        "path": "servers.dat",
-                        "url": "http://mc.westeroscraft.com/WesterosCraftLauncher/prod-1.11.2/servers.dat"
-                    }
-                }
-            ]
+            {
+              "id": "net.minecraftforge:fmlcore:1.19.2-43.2.0",
+              "name": "Minecraft Forge (fmlcore)",
+              "type": "Library",
+              "classpath": true,
+              "artifact": {
+                "size": 112533,
+                "MD5": "5104faaa709f5de98eadb55f8e48312e",
+                "url": "https://minecorp-mc.fr/nebula/repo/lib/net/minecraftforge/fmlcore/1.19.2-43.2.0/fmlcore-1.19.2-43.2.0.jar"
+              },
+              "subModules": []
+            },
+            {
+              "id": "net.minecraftforge:javafmllanguage:1.19.2-43.2.0",
+              "name": "Minecraft Forge (javafmllanguage)",
+              "type": "Library",
+              "classpath": true,
+              "artifact": {
+                "size": 16351,
+                "MD5": "a9ad6c69674b439a92760cacf86ee24b",
+                "url": "https://minecorp-mc.fr/nebula/repo/lib/net/minecraftforge/javafmllanguage/1.19.2-43.2.0/javafmllanguage-1.19.2-43.2.0.jar"
+              },
+              "subModules": []
+            },
+            {
+              "id": "net.minecraftforge:mclanguage:1.19.2-43.2.0",
+              "name": "Minecraft Forge (mclanguage)",
+              "type": "Library",
+              "classpath": true,
+              "artifact": {
+                "size": 4985,
+                "MD5": "47279d60ef18470629644ed24e24caee",
+                "url": "https://minecorp-mc.fr/nebula/repo/lib/net/minecraftforge/mclanguage/1.19.2-43.2.0/mclanguage-1.19.2-43.2.0.jar"
+              },
+              "subModules": []
+            },
+            {
+              "id": "net.minecraftforge:forge:1.19.2-43.2.0:universal",
+              "name": "Minecraft Forge (universal jar)",
+              "type": "Library",
+              "classpath": false,
+              "artifact": {
+                "size": 2604372,
+                "MD5": "82875fd2ddaec6745d89c0a0c0bb4151",
+                "url": "https://minecorp-mc.fr/nebula/repo/lib/net/minecraftforge/forge/1.19.2-43.2.0/forge-1.19.2-43.2.0-universal.jar"
+              },
+              "subModules": []
+            },
+            {
+              "id": "net.minecraftforge:forge:1.19.2-43.2.0:client",
+              "name": "Minecraft Forge (client jar)",
+              "type": "Library",
+              "classpath": false,
+              "artifact": {
+                "size": 5290671,
+                "MD5": "32277d4a51c601574a24a73d03197275",
+                "url": "https://minecorp-mc.fr/nebula/repo/lib/net/minecraftforge/forge/1.19.2-43.2.0/forge-1.19.2-43.2.0-client.jar"
+              },
+              "subModules": []
+            },
+            {
+              "id": "net.minecraft:client:1.19.2-20220805.130853:srg",
+              "name": "Minecraft Forge (client srg)",
+              "type": "Library",
+              "classpath": false,
+              "artifact": {
+                "size": 17332865,
+                "MD5": "70476cb0e2de11b97d913169c3b9d5a8",
+                "url": "https://minecorp-mc.fr/nebula/repo/lib/net/minecraft/client/1.19.2-20220805.130853/client-1.19.2-20220805.130853-srg.jar"
+              },
+              "subModules": []
+            },
+            {
+              "id": "net.minecraft:client:1.19.2-20220805.130853:slim",
+              "name": "Minecraft Forge (client slim)",
+              "type": "Library",
+              "classpath": false,
+              "artifact": {
+                "size": 11637719,
+                "MD5": "7ae1ac1daf86584f93ae83dd916d3bdb",
+                "url": "https://minecorp-mc.fr/nebula/repo/lib/net/minecraft/client/1.19.2-20220805.130853/client-1.19.2-20220805.130853-slim.jar"
+              },
+              "subModules": []
+            },
+            {
+              "id": "net.minecraft:client:1.19.2-20220805.130853:extra",
+              "name": "Minecraft Forge (client extra)",
+              "type": "Library",
+              "classpath": false,
+              "artifact": {
+                "size": 10007043,
+                "MD5": "3014cfce92de3aff55cc50908a510051",
+                "url": "https://minecorp-mc.fr/nebula/repo/lib/net/minecraft/client/1.19.2-20220805.130853/client-1.19.2-20220805.130853-extra.jar"
+              },
+              "subModules": []
+            },
+            {
+              "id": "cpw.mods:securejarhandler:2.1.4",
+              "name": "Minecraft Forge (securejarhandler)",
+              "type": "Library",
+              "artifact": {
+                "size": 87315,
+                "MD5": "b49ceccef2c091769f134c47c108cb8b",
+                "url": "https://minecorp-mc.fr/nebula/repo/lib/cpw/mods/securejarhandler/2.1.4/securejarhandler-2.1.4.jar"
+              }
+            },
+            {
+              "id": "org.ow2.asm:asm:9.3",
+              "name": "Minecraft Forge (asm)",
+              "type": "Library",
+              "artifact": {
+                "size": 122176,
+                "MD5": "e1c3b96035117ab516ffe0de9bd696e0",
+                "url": "https://minecorp-mc.fr/nebula/repo/lib/org/ow2/asm/asm/9.3/asm-9.3.jar"
+              }
+            },
+            {
+              "id": "org.ow2.asm:asm-commons:9.3",
+              "name": "Minecraft Forge (asm-commons)",
+              "type": "Library",
+              "artifact": {
+                "size": 72716,
+                "MD5": "16e6ac17d33ad97baa415c42e9d93d38",
+                "url": "https://minecorp-mc.fr/nebula/repo/lib/org/ow2/asm/asm-commons/9.3/asm-commons-9.3.jar"
+              }
+            },
+            {
+              "id": "org.ow2.asm:asm-tree:9.3",
+              "name": "Minecraft Forge (asm-tree)",
+              "type": "Library",
+              "artifact": {
+                "size": 52669,
+                "MD5": "f087bfb911ff93957e44860de3e73c46",
+                "url": "https://minecorp-mc.fr/nebula/repo/lib/org/ow2/asm/asm-tree/9.3/asm-tree-9.3.jar"
+              }
+            },
+            {
+              "id": "org.ow2.asm:asm-util:9.3",
+              "name": "Minecraft Forge (asm-util)",
+              "type": "Library",
+              "artifact": {
+                "size": 85682,
+                "MD5": "d6d0ac4e5c0be9a25a426c70c714b17b",
+                "url": "https://minecorp-mc.fr/nebula/repo/lib/org/ow2/asm/asm-util/9.3/asm-util-9.3.jar"
+              }
+            },
+            {
+              "id": "org.ow2.asm:asm-analysis:9.3",
+              "name": "Minecraft Forge (asm-analysis)",
+              "type": "Library",
+              "artifact": {
+                "size": 34276,
+                "MD5": "11e43c0220b3f6b4791b8abf7b4cc7ef",
+                "url": "https://minecorp-mc.fr/nebula/repo/lib/org/ow2/asm/asm-analysis/9.3/asm-analysis-9.3.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:accesstransformers:8.0.4",
+              "name": "Minecraft Forge (accesstransformers)",
+              "type": "Library",
+              "artifact": {
+                "size": 77756,
+                "MD5": "f0d3533f9437ba4428eaee9f28f7ecd9",
+                "url": "https://minecorp-mc.fr/nebula/repo/lib/net/minecraftforge/accesstransformers/8.0.4/accesstransformers-8.0.4.jar"
+              }
+            },
+            {
+              "id": "org.antlr:antlr4-runtime:4.9.1",
+              "name": "Minecraft Forge (antlr4-runtime)",
+              "type": "Library",
+              "artifact": {
+                "size": 337868,
+                "MD5": "0dcc4b860d5d8d2852ab94d58c56ca2d",
+                "url": "https://minecorp-mc.fr/nebula/repo/lib/org/antlr/antlr4-runtime/4.9.1/antlr4-runtime-4.9.1.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:eventbus:6.0.3",
+              "name": "Minecraft Forge (eventbus)",
+              "type": "Library",
+              "artifact": {
+                "size": 52624,
+                "MD5": "7c93693a70962a1c1893e3c058dca5cf",
+                "url": "https://minecorp-mc.fr/nebula/repo/lib/net/minecraftforge/eventbus/6.0.3/eventbus-6.0.3.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:forgespi:6.0.0",
+              "name": "Minecraft Forge (forgespi)",
+              "type": "Library",
+              "artifact": {
+                "size": 32714,
+                "MD5": "8c04b8c26ac1d55c281bfeaa71731414",
+                "url": "https://minecorp-mc.fr/nebula/repo/lib/net/minecraftforge/forgespi/6.0.0/forgespi-6.0.0.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:coremods:5.0.1",
+              "name": "Minecraft Forge (coremods)",
+              "type": "Library",
+              "artifact": {
+                "size": 24199,
+                "MD5": "8c590051c5d65e098ca7c2e3ddf803a8",
+                "url": "https://minecorp-mc.fr/nebula/repo/lib/net/minecraftforge/coremods/5.0.1/coremods-5.0.1.jar"
+              }
+            },
+            {
+              "id": "cpw.mods:modlauncher:10.0.8",
+              "name": "Minecraft Forge (modlauncher)",
+              "type": "Library",
+              "artifact": {
+                "size": 130263,
+                "MD5": "3e171edcc29e762d2ecafffabb9e9341",
+                "url": "https://minecorp-mc.fr/nebula/repo/lib/cpw/mods/modlauncher/10.0.8/modlauncher-10.0.8.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:unsafe:0.2.0",
+              "name": "Minecraft Forge (unsafe)",
+              "type": "Library",
+              "artifact": {
+                "size": 2834,
+                "MD5": "2d1016ebe4c1a63dd50a59d26bd12db1",
+                "url": "https://minecorp-mc.fr/nebula/repo/lib/net/minecraftforge/unsafe/0.2.0/unsafe-0.2.0.jar"
+              }
+            },
+            {
+              "id": "com.electronwill.night-config:core:3.6.4",
+              "name": "Minecraft Forge (core)",
+              "type": "Library",
+              "artifact": {
+                "size": 199834,
+                "MD5": "d83ab07267e402131fb93d899a57f5cd",
+                "url": "https://minecorp-mc.fr/nebula/repo/lib/com/electronwill/night-config/core/3.6.4/core-3.6.4.jar"
+              }
+            },
+            {
+              "id": "com.electronwill.night-config:toml:3.6.4",
+              "name": "Minecraft Forge (toml)",
+              "type": "Library",
+              "artifact": {
+                "size": 31816,
+                "MD5": "bc95d0709fff2164b01fd09fbc988be8",
+                "url": "https://minecorp-mc.fr/nebula/repo/lib/com/electronwill/night-config/toml/3.6.4/toml-3.6.4.jar"
+              }
+            },
+            {
+              "id": "org.apache.maven:maven-artifact:3.8.5",
+              "name": "Minecraft Forge (maven-artifact)",
+              "type": "Library",
+              "artifact": {
+                "size": 58077,
+                "MD5": "ce473b0d9fbfd10fe147f03fe8707d67",
+                "url": "https://minecorp-mc.fr/nebula/repo/lib/org/apache/maven/maven-artifact/3.8.5/maven-artifact-3.8.5.jar"
+              }
+            },
+            {
+              "id": "net.jodah:typetools:0.8.3",
+              "name": "Minecraft Forge (typetools)",
+              "type": "Library",
+              "artifact": {
+                "size": 15425,
+                "MD5": "ee4596e1413cc1a5e080c971d6064753",
+                "url": "https://minecorp-mc.fr/nebula/repo/lib/net/jodah/typetools/0.8.3/typetools-0.8.3.jar"
+              }
+            },
+            {
+              "id": "net.minecrell:terminalconsoleappender:1.2.0",
+              "name": "Minecraft Forge (terminalconsoleappender)",
+              "type": "Library",
+              "artifact": {
+                "size": 15977,
+                "MD5": "679363fa893293791e55a21f81342f87",
+                "url": "https://minecorp-mc.fr/nebula/repo/lib/net/minecrell/terminalconsoleappender/1.2.0/terminalconsoleappender-1.2.0.jar"
+              }
+            },
+            {
+              "id": "org.jline:jline-reader:3.12.1",
+              "name": "Minecraft Forge (jline-reader)",
+              "type": "Library",
+              "artifact": {
+                "size": 150765,
+                "MD5": "a2e7b012cd9802f83321187409174a94",
+                "url": "https://minecorp-mc.fr/nebula/repo/lib/org/jline/jline-reader/3.12.1/jline-reader-3.12.1.jar"
+              }
+            },
+            {
+              "id": "org.jline:jline-terminal:3.12.1",
+              "name": "Minecraft Forge (jline-terminal)",
+              "type": "Library",
+              "artifact": {
+                "size": 211712,
+                "MD5": "3c52be5ab5e3847be6e62269de924cb0",
+                "url": "https://minecorp-mc.fr/nebula/repo/lib/org/jline/jline-terminal/3.12.1/jline-terminal-3.12.1.jar"
+              }
+            },
+            {
+              "id": "org.spongepowered:mixin:0.8.5",
+              "name": "Minecraft Forge (mixin)",
+              "type": "Library",
+              "artifact": {
+                "size": 1089277,
+                "MD5": "19b3a2ae9e445a6e626fd7d1648cfcb8",
+                "url": "https://minecorp-mc.fr/nebula/repo/lib/org/spongepowered/mixin/0.8.5/mixin-0.8.5.jar"
+              }
+            },
+            {
+              "id": "org.openjdk.nashorn:nashorn-core:15.3",
+              "name": "Minecraft Forge (nashorn-core)",
+              "type": "Library",
+              "artifact": {
+                "size": 2167288,
+                "MD5": "91e98c20afa1090c344229ce28b4c53f",
+                "url": "https://minecorp-mc.fr/nebula/repo/lib/org/openjdk/nashorn/nashorn-core/15.3/nashorn-core-15.3.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:JarJarSelector:0.3.16",
+              "name": "Minecraft Forge (JarJarSelector)",
+              "type": "Library",
+              "artifact": {
+                "size": 17374,
+                "MD5": "5e859d6320cb16055febaedacb8b9806",
+                "url": "https://minecorp-mc.fr/nebula/repo/lib/net/minecraftforge/JarJarSelector/0.3.16/JarJarSelector-0.3.16.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:JarJarMetadata:0.3.16",
+              "name": "Minecraft Forge (JarJarMetadata)",
+              "type": "Library",
+              "artifact": {
+                "size": 15242,
+                "MD5": "332b118877d33c715f3ee67b75bffdd7",
+                "url": "https://minecorp-mc.fr/nebula/repo/lib/net/minecraftforge/JarJarMetadata/0.3.16/JarJarMetadata-0.3.16.jar"
+              }
+            },
+            {
+              "id": "cpw.mods:bootstraplauncher:1.1.2",
+              "name": "Minecraft Forge (bootstraplauncher)",
+              "type": "Library",
+              "artifact": {
+                "size": 8284,
+                "MD5": "48f5255aa337344c467c0150d347813d",
+                "url": "https://minecorp-mc.fr/nebula/repo/lib/cpw/mods/bootstraplauncher/1.1.2/bootstraplauncher-1.1.2.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:JarJarFileSystems:0.3.16",
+              "name": "Minecraft Forge (JarJarFileSystems)",
+              "type": "Library",
+              "artifact": {
+                "size": 32052,
+                "MD5": "f4efd51f520cb4c98483c040bdc58aab",
+                "url": "https://minecorp-mc.fr/nebula/repo/lib/net/minecraftforge/JarJarFileSystems/0.3.16/JarJarFileSystems-0.3.16.jar"
+              }
+            },
+            {
+              "id": "net.minecraftforge:fmlloader:1.19.2-43.2.0",
+              "name": "Minecraft Forge (fmlloader)",
+              "type": "Library",
+              "artifact": {
+                "size": 261074,
+                "MD5": "e8a091124f85401089cc98da9ecbd50a",
+                "url": "https://minecorp-mc.fr/nebula/repo/lib/net/minecraftforge/fmlloader/1.19.2-43.2.0/fmlloader-1.19.2-43.2.0.jar"
+              }
+            }
+          ]
+        },
+        {
+          "id": "com.github.alexthe666:alexsmobs:1.21.1@jar",
+          "name": "Alex's Mobs",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 25655463,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/alexsmobs-1.21.1.jar",
+            "MD5": "0ba48ab00c965c7acaa061d0844d9f17"
+          }
+        },
+        {
+          "id": "shadows.apotheosis:apotheosis:6.1.2@jar",
+          "name": "Apotheosis",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 1536343,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/Apotheosis-1.19.2-6.1.2.jar",
+            "MD5": "dd74e9b543fd0e303ac0d7e4805053da"
+          }
+        },
+        {
+          "id": "squeek.appleskin:appleskin:2.4.2+mc1.19@jar",
+          "name": "AppleSkin",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 46991,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/appleskin-forge-mc1.19-2.4.2.jar",
+            "MD5": "3cd43c763f6e9a244a115606faaecf4f"
+          }
+        },
+        {
+          "id": "com.teammetallurgy:aquaculture:1.19.2-2.4.8@jar",
+          "name": "Aquaculture 2",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 583371,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/Aquaculture-1.19.2-2.4.8.jar",
+            "MD5": "072d1a0422d9bba07ce517b9b43781bc"
+          }
+        },
+        {
+          "id": "dev.architectury:architectury:6.5.82@jar",
+          "name": "Architectury",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 546196,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/architectury-6.5.82-forge.jar",
+            "MD5": "3ccf465c6327d961048a2c10ccc2acf5"
+          }
+        },
+        {
+          "id": "com.hollingsworth.arsnouveau:ars_nouveau:3.13.4@jar",
+          "name": "Ars Nouveau",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 12225370,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/ars_nouveau-1.19.2-3.13.4.jar",
+            "MD5": "08f4440652a80c3af839d67fa0afc7eb"
+          }
+        },
+        {
+          "id": "vazkii.arl:autoreglib:1.8.2-55@jar",
+          "name": "AutoRegLib",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 45741,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/AutoRegLib-1.8.2-55.jar",
+            "MD5": "8d0cfc46ea0c7334ff511eff2bb3e9ce"
+          }
+        },
+        {
+          "id": "net.blay09.mods:balm:4.5.7@jar",
+          "name": "Balm",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 314638,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/balm-forge-1.19.2-4.5.7.jar",
+            "MD5": "bf5a56610fa06d255fd644dff5d150ba"
+          }
+        },
+        {
+          "id": "net.darkhax:bookshelf:16.2.18@jar",
+          "name": "Bookshelf",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 320093,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/Bookshelf-Forge-1.19.2-16.2.18.jar",
+            "MD5": "57c9034e0d377aa83fe042c42e5ef555"
+          }
+        },
+        {
+          "id": "com.mrcrayfish.furniture:cfm:7.0.0-pre35@jar",
+          "name": "MrCrayfish's Furniture Mod",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 2209834,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/cfm-7.0.0-pre35-1.19.2.jar",
+            "MD5": "cd3ceae9615012f62d84fa1af860a1b0"
+          }
+        },
+        {
+          "id": "com.github.alexthe666:citadel:2.1.3@jar",
+          "name": "Citadel",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 3064068,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/citadel-2.1.3-1.19.jar",
+            "MD5": "da90c62c0d8a6402b6506950387193e8"
+          }
+        },
+        {
+          "id": "codechicken.lib:codechickenlib:4.3.1.481@jar",
+          "name": "CodeChicken Lib",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 861463,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/CodeChickenLib-1.19.2-4.3.1.481-universal.jar",
+            "MD5": "eaa9cd0b0543f8a7ca6951828a3422a2"
+          }
+        },
+        {
+          "id": "com.illusivesoulworks:comforts:6.0.5+1.19.2@jar",
+          "name": "Comforts",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 326279,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/comforts-forge-6.0.5+1.19.2.jar",
+            "MD5": "3ea5a0e5fff5de3059480e1ee48f85fe"
+          }
+        },
+        {
+          "id": "com.blamejared:controlling:10.0+7@jar",
+          "name": "Controlling",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 117659,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/Controlling-forge-1.19.2-10.0+7.jar",
+            "MD5": "a1806659c98d659f6daad51a6673671a"
+          }
+        },
+        {
+          "id": "net.blay09.mods:cookingforblockheads:13.3.2@jar",
+          "name": "CookingForBlockheads",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 691052,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/cookingforblockheads-forge-1.19.2-13.3.2.jar",
+            "MD5": "32be06b533bf20f2df7b3b60ac790f00"
+          }
+        },
+        {
+          "id": "wutian.coppercraft:coppercraft:1.1.0.7@jar",
+          "name": "Copper Craft",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 498499,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/CopperCraft-1.19.1-1.1.0.7.jar",
+            "MD5": "5a0394e56ad85e0618aec791f19417f8"
+          }
+        },
+        {
+          "id": "lain.mods.cos.init:cosmeticarmorreworked:1.19.2-v1a@jar",
+          "name": "CosmeticArmorReworked",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 87648,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/CosmeticArmorReworked-1.19.2-v1a.jar",
+            "MD5": "04e67c8f93e7121efb0b34d96db6370c"
+          }
+        },
+        {
+          "id": "net.blay09.mods:craftingtweaks:15.1.7@jar",
+          "name": "CraftingTweaks",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 182096,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/craftingtweaks-forge-1.19.2-15.1.7.jar",
+            "MD5": "115a451c22ddf00e8004b118bd2125b4"
+          }
+        },
+        {
+          "id": "com.blamejared:crafttweaker:10.1.43@jar",
+          "name": "CraftTweaker",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 3027726,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/CraftTweaker-forge-1.19.2-10.1.43.jar",
+            "MD5": "12cb37d1c08706442b15188ad4dbeab9"
+          }
+        },
+        {
+          "id": "com.simibubi:create:0.5.0.i@jar",
+          "name": "Create",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 13808628,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/create-1.19.2-0.5.0.i.jar",
+            "MD5": "b4c336a51c1ccb578917efba4322a44b"
+          }
+        },
+        {
+          "id": "net.mcreator.createstuffadditions:create_sa:2.0.2.@jar",
+          "name": "Create Stuff & Additions",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 1073439,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/create-stuff-additions1.19.2_v2.0.2c.jar",
+            "MD5": "d2621a656dff2ac1b840b2711b297fc4"
+          }
+        },
+        {
+          "id": "com.mrh0:createaddition:1.19.2-20230507a@jar",
+          "name": "Create Crafts & Additions",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 1095921,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/createaddition-1.19.2-20230507a.jar",
+            "MD5": "5c8a9f7bc985f99ffc7d66e2cdc8630d"
+          }
+        },
+        {
+          "id": "com.github.talrey:createdeco:1.3.2-1.19.2@jar",
+          "name": "Create Deco",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 3105731,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/createdeco-1.3.2-1.19.2.jar",
+            "MD5": "a220ccc495fe8aaa64b1162cc92500ba"
+          }
+        },
+        {
+          "id": "com.robocraft999:creategoggles:0.5.4.1@jar",
+          "name": "Create Goggles",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 216684,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/creategoggles-0.5.4.1-[FORGE].jar",
+            "MD5": "ce63b6575468c421bc5b2ba196bee1d8"
+          }
+        },
+        {
+          "id": "com.blamejared:createtweaker:3.0.0.5@jar",
+          "name": "CreateTweaker",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 108736,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/CreateTweaker-1.19.2-3.0.0.5.jar",
+            "MD5": "06b2ffbd19f4b77ee055a6a32ca3cb14"
+          }
+        },
+        {
+          "id": "com.blakebr0:cucumber:6.0.6@jar",
+          "name": "Cucumber Library",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 187056,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/Cucumber-1.19.2-6.0.6.jar",
+            "MD5": "c5980899883e5cbe3a81c0eec6732001"
+          }
+        },
+        {
+          "id": "com.illusivesoulworks:culinaryconstruct:5.0.0+1.19.2@jar",
+          "name": "Culinary Construct",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 228834,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/culinaryconstruct-forge-5.0.0+1.19.2.jar",
+            "MD5": "039a1a29bd3131f32664a9d55c87b20f"
+          }
+        },
+        {
+          "id": "top.theillusivec4:curios:1.19.2-5.1.4.1@jar",
+          "name": "Curios API",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 278432,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/curios-forge-1.19.2-5.1.4.1.jar",
+            "MD5": "e8e9c74b092e40d8bb4e5bd5c5ddb0c4"
+          }
+        },
+        {
+          "id": "xiroc.dungeoncrawl:dungeoncrawl:2.3.12@jar",
+          "name": "Dungeon Crawl",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 760172,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/DungeonCrawl-1.19-2.3.12.jar",
+            "MD5": "3d7d01e984c97ec66ccaa6b15a7dfbda"
+          }
+        },
+        {
+          "id": "xyz.vsngamer:elevatorid:1.19-1.8.7@jar",
+          "name": "Elevator Mod",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 186675,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/elevatorid-1.19-1.8.7.jar",
+            "MD5": "db22c808c549a49f751dc97e6d6f6120"
+          }
+        },
+        {
+          "id": "net.darkhax:enchdesc:13.0.14@jar",
+          "name": "EnchantmentDescriptions",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 63128,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/EnchantmentDescriptions-Forge-1.19.2-13.0.14.jar",
+            "MD5": "dc341c92952f6b6c790b6e1c61a1e15c"
+          }
+        },
+        {
+          "id": "codechicken.enderstorage:enderstorage:2.10.1.181@jar",
+          "name": "EnderStorage",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 218483,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/EnderStorage-1.19.2-2.10.1.181-universal.jar",
+            "MD5": "75d4cdf7dce4a676cbf9dbfd998e7a13"
+          }
+        },
+        {
+          "id": "vectorwing.farmersdelight:farmersdelight:1.19-1.2.1@jar",
+          "name": "Farmer's Delight",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 2740603,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/FarmersDelight-1.19-1.2.1.jar",
+            "MD5": "5738d49193498251a25d7ae659107bee"
+          }
+        },
+        {
+          "id": "net.olafkeijsers:fastleafdecay:30@jar",
+          "name": "FastLeafDecay",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 11295,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/FastLeafDecay-30.jar",
+            "MD5": "9004a418268ab7e5c3529bd9e1922ce7"
+          }
+        },
+        {
+          "id": "sonar.fluxnetworks:fluxnetworks:7.1.3.12@jar",
+          "name": "Flux Networks",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 505415,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/FluxNetworks-1.19.2-7.1.3.12.jar",
+            "MD5": "08544c41d9009c32d1a9bca7db87ed50"
+          }
+        },
+        {
+          "id": "mrthomas20121.foregoing_tweaker:foregoing_tweaker:1.19.2-1.1.5@jar",
+          "name": "Foregoing Tweaker",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 22360,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/foregoing_tweaker-1.19.2-1.1.5.jar",
+            "MD5": "087ad6222700a6e2823ce4e912ab7cf2"
+          }
+        },
+        {
+          "id": "dev.ftb.mods:ftbchunks:1902.3.21-build.266@jar",
+          "name": "FTB Chunks",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 857213,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/ftb-chunks-forge-1902.3.21-build.266.jar",
+            "MD5": "4a2e96ccd367d7b92f001f3eb9f609fc"
+          }
+        },
+        {
+          "id": "dev.ftb.mods:ftbessentials:1902.1.10-build.47@jar",
+          "name": "FTB Essentials",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 78532,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/ftb-essentials-1902.1.10-build.47.jar",
+            "MD5": "73d04ed8f950e464ebd5a3b5c4f15598"
+          }
+        },
+        {
+          "id": "dev.ftb.mods:ftblibrary:1902.3.18-build.208@jar",
+          "name": "FTB Library",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 596973,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/ftb-library-forge-1902.3.18-build.208.jar",
+            "MD5": "caad332f843c39c79871d6adf004c0cf"
+          }
+        },
+        {
+          "id": "dev.ftb.mods:ftbquests:1902.4.15-build.228@jar",
+          "name": "FTB Quests",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 1128645,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/ftb-quests-forge-1902.4.15-build.228.jar",
+            "MD5": "abe353a72f45259372475b57a339e8a4"
+          }
+        },
+        {
+          "id": "dev.ftb.mods:ftbranks:1902.1.15-build.77@jar",
+          "name": "FTB Ranks",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 79625,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/ftb-ranks-forge-1902.1.15-build.77.jar",
+            "MD5": "45e0d97134fd32ececdfdf9a40e85b34"
+          }
+        },
+        {
+          "id": "dev.ftb.mods:ftbteams:1902.2.13-build.100@jar",
+          "name": "FTB Teams",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 216604,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/ftb-teams-forge-1902.2.13-build.100.jar",
+            "MD5": "8a80177a558eedc67bc69234a1235741"
+          }
+        },
+        {
+          "id": "dev.ftb.mods:ftbultimine:1902.3.5-build.65@jar",
+          "name": "FTB Ultimine",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 74149,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/ftb-ultimine-forge-1902.3.5-build.65.jar",
+            "MD5": "c766f9d8f2045a1d62b62a8f6d2ce58c"
+          }
+        },
+        {
+          "id": "net.creeperhost.ftbbackups:ftbbackups2:1.0.18@jar",
+          "name": "FTB Backups 2",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 3730331,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/ftbbackups2-forge-1.19.2-1.0.18.jar",
+            "MD5": "65b7c029cddb4e55e0bc542e7a8bdae4"
+          }
+        },
+        {
+          "id": "tallestegg.guardvillagers:guardvillagers:1.19.2-1.5.5@jar",
+          "name": "Guard Villagers",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 196613,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/guardvillagers-1.19.2-1.5.5.jar",
+            "MD5": "076a14736824e1fe3ab5628b8837ba59"
+          }
+        },
+        {
+          "id": "com.buuz135.industrial:industrialforegoing:3.3.2.3@jar",
+          "name": "Industrial Foregoing",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 4494768,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/industrial-foregoing-1.19.2-3.3.2.3-5.jar",
+            "MD5": "aca5a384b14b01bf188d6a3ad4dc4bab"
+          }
+        },
+        {
+          "id": "com.progwml6:ironchest:1.19.2-14.2.7@jar",
+          "name": "Iron Chests",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 295119,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/ironchest-1.19.2-14.2.7.jar",
+            "MD5": "7e2cee5753aeb0c9013fba2d54d55e35"
+          }
+        },
+        {
+          "id": "dev.latvian.mods:itemfilters:1902.2.9-build.46@jar",
+          "name": "Item Filters",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 115285,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/item-filters-forge-1902.2.9-build.46.jar",
+            "MD5": "3cb1510cbcba7cc2bbefc48442ec1938"
+          }
+        },
+        {
+          "id": "mezz.jei:jei:11.6.0.1015@jar",
+          "name": "Just Enough Items",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 1090499,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/jei-1.19.2-forge-11.6.0.1015.jar",
+            "MD5": "12d0e2bfd6b5f6bf59aba91eb8950c7b"
+          }
+        },
+        {
+          "id": "jeresources:jeresources:1.2.2.200@jar",
+          "name": "Just Enough Resources",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 275378,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/JustEnoughResources-1.19.2-1.2.2.200.jar",
+            "MD5": "6565c7bc18b6dd59bfdd0b779c23fd1f"
+          }
+        },
+        {
+          "id": "dev.latvian.mods.kubejs.create:kubejs_create:1902.1.1-build.35@jar",
+          "name": "KubeJS Create",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 28268,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/kubejs-create-forge-1902.1.1-build.35.jar",
+            "MD5": "449db876b59d0c48e03ee2d9d374b831"
+          }
+        },
+        {
+          "id": "dev.latvian.mods:kubejs:1902.6.0-build.142@jar",
+          "name": "KubeJS",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 1057320,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/kubejs-forge-1902.6.0-build.142.jar",
+            "MD5": "3893d1bc24608343685599bceb7cd2a7"
+          }
+        },
+        {
+          "id": "dev.latvian.kubejs.mekanism:kubejs_mekanism:1902.1.4-build.11@jar",
+          "name": "KubeJS Mekanism",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 43970,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/kubejs-mekanism-1902.1.4-build.11.jar",
+            "MD5": "a65647d904c5e1b744326f2676f0d7db"
+          }
+        },
+        {
+          "id": "com.electrolyte:matc:1.3.1@jar",
+          "name": "Mystical Agriculture Tiered Crystals",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 29253,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/matc-1.3.1.jar",
+            "MD5": "36e8b64fc582f35bb027b3a5754a3bd0"
+          }
+        },
+        {
+          "id": "mcjty.lib:mcjtylib:1.19-7.2.5@jar",
+          "name": "McJtyLib",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 678579,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/mcjtylib-1.19-7.2.5.jar",
+            "MD5": "b0a903ede4f658694aa993b725da398d"
+          }
+        },
+        {
+          "id": "mekanism:mekanism:10.3.8@jar",
+          "name": "Mekanism",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 12172882,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/Mekanism-1.19.2-10.3.8.477.jar",
+            "MD5": "918d7dbf362ad84fd955c26f571d5e0e"
+          }
+        },
+        {
+          "id": "mekanism.additions:mekanismadditions:10.3.8@jar",
+          "name": "Mekanism: Additions",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 1108644,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/MekanismAdditions-1.19.2-10.3.8.477.jar",
+            "MD5": "b5976ec0bb4c54de31a4d87505ed62c4"
+          }
+        },
+        {
+          "id": "mekanism.generators:mekanismgenerators:10.3.8@jar",
+          "name": "Mekanism: Generators",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 1000255,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/MekanismGenerators-1.19.2-10.3.8.477.jar",
+            "MD5": "857fbd6606eec2387b739fc21f4e98fb"
+          }
+        },
+        {
+          "id": "mekanism.tools:mekanismtools:10.3.8@jar",
+          "name": "Mekanism: Tools",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 413726,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/MekanismTools-1.19.2-10.3.8.477.jar",
+            "MD5": "fc365517adb825eb97b7c55f2d1d458b"
+          }
+        },
+        {
+          "id": "net.mehvahdjukaar:moonlight:1.19.2-2.2.32@jar",
+          "name": "Moonlight Library",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 841030,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/moonlight-1.19.2-2.2.32-forge.jar",
+            "MD5": "12daa638d3be14088cd2be4789f3bddf"
+          }
+        },
+        {
+          "id": "gisellevonbingen.mmp:moremekanismprocessing:3.0@jar",
+          "name": "More Mekanism Processing",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 613598,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/MoreMekanismProcessing-1.19.2-3.0.jar",
+            "MD5": "97a060d8d91e48d051bbdf145c589eba"
+          }
+        },
+        {
+          "id": "yalter.mousetweaks:mousetweaks:2.23@jar",
+          "name": "Mouse Tweaks",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 75983,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/MouseTweaks-forge-mc1.19-2.23.jar",
+            "MD5": "855222f31f7a2ebfe84cd57480b9e011"
+          }
+        },
+        {
+          "id": "com.focamacho:mysticaladaptations:1.19.2-1.0@jar",
+          "name": "Mystical Adaptations",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 136321,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/MysticalAdaptations-1.19.2-1.0.jar",
+            "MD5": "28501992a3a5036bb858549633fbb5e5"
+          }
+        },
+        {
+          "id": "com.blakebr0:mysticalagradditions:6.0.2@jar",
+          "name": "Mystical Agradditions",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 301818,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/MysticalAgradditions-1.19.2-6.0.2.jar",
+            "MD5": "e8eb941241e3d77506931a02d508a001"
+          }
+        },
+        {
+          "id": "com.blakebr0:mysticalagriculture:6.0.8@jar",
+          "name": "Mystical Agriculture",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 2053885,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/MysticalAgriculture-1.19.2-6.0.8.jar",
+            "MD5": "975885ba730e0425afa2dd5c60d41c1f"
+          }
+        },
+        {
+          "id": "com.blakebr0:mysticalcustomization:4.0.1@jar",
+          "name": "Mystical Customization",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 45154,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/MysticalCustomization-1.19.2-4.0.1.jar",
+            "MD5": "80ea2061b88e122186ed4ea56e4c7823"
+          }
+        },
+        {
+          "id": "net.blay09.mods:netherportalfix:10.0.1@jar",
+          "name": "NetherPortalFix",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 216681,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/netherportalfix-forge-1.19-10.0.1.jar",
+            "MD5": "8f3d4e86dad9fe2b80eb1c1bdb570508"
+          }
+        },
+        {
+          "id": "potionstudios.byg:byg:2.0.0.13@jar",
+          "name": "Oh The Biomes You'll Go",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 36453240,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/Oh_The_Biomes_You'll_Go-forge-1.19.2-2.0.0.13.jar",
+            "MD5": "43087145240c9356bc4cacbe5a89decb"
+          }
+        },
+        {
+          "id": "vazkii.patchouli:patchouli:1.19.2-77@jar",
+          "name": "Patchouli",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 635370,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/Patchouli-1.19.2-77.jar",
+            "MD5": "5727784bad9e215a74a64107c1e45036"
+          }
+        },
+        {
+          "id": "shadows.placebo:placebo:7.1.8@jar",
+          "name": "Placebo",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 243275,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/Placebo-1.19.2-7.1.8.jar",
+            "MD5": "7dbc1ee39b5802f1236a994cc0a1db17"
+          }
+        },
+        {
+          "id": "net.creeperhost:polylib:1900.0.2-build.42@jar",
+          "name": "PolyLib",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 749263,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/polylib-forge-1900.0.2-build.42.jar",
+            "MD5": "c21c0c5b6ef36e51ea0d4404ac936e6e"
+          }
+        },
+        {
+          "id": "com.illusivesoulworks:polymorph:0.46.1+1.19.2@jar",
+          "name": "Polymorph",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 252615,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/polymorph-forge-0.46.1+1.19.2.jar",
+            "MD5": "0f93dbc25387a063809aab5fc5f2155c"
+          }
+        },
+        {
+          "id": "vazkii.quark.base:quark:3.4-399@jar",
+          "name": "Quark",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 14378629,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/Quark-3.4-399.jar",
+            "MD5": "335abc458c455da04d81b2df81bee16e"
+          }
+        },
+        {
+          "id": "com.refinedmods:refinedstorage:1.11.6@jar",
+          "name": "Refined Storage",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 3270375,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/refinedstorage-1.11.6.jar",
+            "MD5": "dabbf4211f5e29e623bb4b9077cc8979"
+          }
+        },
+        {
+          "id": "com.refinedmods:refinedstorageaddons:0.9.0@jar",
+          "name": "Refined Storage Addons",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 32913,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/refinedstorageaddons-0.9.0.jar",
+            "MD5": "934dfe7bd5c6f73e66e064e31e6729c5"
+          }
+        },
+        {
+          "id": "mcjty.rftoolsbase:rftoolsbase:1.19-4.1.7@jar",
+          "name": "RFToolsBase",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 414445,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/rftoolsbase-1.19-4.1.7.jar",
+            "MD5": "76c8b39733f8654d3ed21cc519e666b7"
+          }
+        },
+        {
+          "id": "dev.latvian.mods.rhino.mod:rhino:1902.2.2-build.268@jar",
+          "name": "Rhino",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 1730989,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/rhino-forge-1902.2.2-build.268.jar",
+            "MD5": "124f398c2d0ac1551de695bca206e929"
+          }
+        },
+        {
+          "id": "net.p3pp3rf1y:sophisticatedbackpacks:1.19.2-3.18.45.819@jar",
+          "name": "Sophisticated Backpacks",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 774112,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/sophisticatedbackpacks-1.19.2-3.18.45.819.jar",
+            "MD5": "4b77d1f2c4ff033545e5856c995a45cc"
+          }
+        },
+        {
+          "id": "net.p3pp3rf1y:sophisticatedcore:1.19.2-0.5.54.261@jar",
+          "name": "Sophisticated Core",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 990455,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/sophisticatedcore-1.19.2-0.5.54.261.jar",
+            "MD5": "c0f6ea6f7fe363b760d01edf37d9b5c9"
+          }
+        },
+        {
+          "id": "com.jaquadro.minecraft:storagedrawers:11.1.2@jar",
+          "name": "Storage Drawers",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 580748,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/StorageDrawers-1.19-11.1.2.jar",
+            "MD5": "3f65972ac73962b980a5c7facf24292e"
+          }
+        },
+        {
+          "id": "net.mehvahdjukaar:supplementaries:1.19.2-2.3.10@jar",
+          "name": "Supplementaries",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 14596895,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/supplementaries-1.19.2-2.3.10.jar",
+            "MD5": "b8865b7cd1cd44657aa6e531546650bc"
+          }
+        },
+        {
+          "id": "terrablender.core:terrablender:2.0.1.136@jar",
+          "name": "TerraBlender",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 96499,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/TerraBlender-forge-1.19.2-2.0.1.136.jar",
+            "MD5": "ed2fe6eb99f5d399db71e71f209de2ac"
+          }
+        },
+        {
+          "id": "com.hrznstudio:titanium:3.7.3@jar",
+          "name": "Titanium",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 617902,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/titanium-1.19.2-3.7.3-27.jar",
+            "MD5": "4f8ac07f4a624f32ca6e82334a291b55"
+          }
+        },
+        {
+          "id": "net.blay09.mods:waystones:11.4.0@jar",
+          "name": "Waystones",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 401026,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/waystones-forge-1.19.2-11.4.0.jar",
+            "MD5": "abff4547530fdc2fa913c1bdb058c8ca"
+          }
+        },
+        {
+          "id": "xaero.minimap:xaerominimap:23.4.1@jar",
+          "name": "Xaero's Minimap",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 1307579,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/Xaeros_Minimap_23.4.1_Forge_1.19.1.jar",
+            "MD5": "d7c72401f3312bef04ebf1346220d2c7"
+          }
+        },
+        {
+          "id": "xaero.map:xaeroworldmap:1.30.1@jar",
+          "name": "Xaero's World Map",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 786455,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/XaerosWorldMap_1.30.1_Forge_1.19.1.jar",
+            "MD5": "fa279ea1a0f1e8a150a7bce15cd7fa70"
+          }
+        },
+        {
+          "id": "mcjty.xnet:xnet:1.19-5.1.4@jar",
+          "name": "XNet",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 518512,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/xnet-1.19-5.1.4.jar",
+            "MD5": "93966daecf2e1cb4adae2eef193766e2"
+          }
+        },
+        {
+          "id": "com.yungnickyoung.minecraft:yungsapi:1.19.2-Forge-3.8.9@jar",
+          "name": "YUNG's API",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 293349,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/YungsApi-1.19.2-Forge-3.8.9.jar",
+            "MD5": "12712e180c8e7acb45ce7530b897c9ee"
+          }
+        },
+        {
+          "id": "com.yungnickyoung.minecraft:bettermineshafts:1.19.2-Forge-3.2.0@jar",
+          "name": "YUNG's Better Mineshafts",
+          "type": "ForgeMod",
+          "artifact": {
+            "size": 273471,
+            "url": "https://minecorp-mc.fr/nebula/servers/SkyModdedS3-1.19.2/forgemods/required/YungsBetterMineshafts-1.19.2-Forge-3.2.0.jar",
+            "MD5": "e4b85013323e1cf4800267cd919fb928"
+          }
         }
-    ]
+      ]
+    }
+  ]
 }

@@ -1,13 +1,13 @@
 {
-    "name": "newzenlauncher",
-    "version": "1.0.3",
-    "productName": "NewzenLauncher",
-    "description": "Launcher Officiel de Newzen",
-    "author": "TIEB62 (Titouan Petit)",
+    "name": "skymodded",
+    "version": "1.0.0",
+    "productName": "SkyModded S3 Launcher",
+    "description": "Launcher Officiel de SkyModded S3",
+    "author": "Sacrifice_Off",
     "license": "GPL-3.0-or-later",
-    "homepage": "https://github.com/NewzenMC/NewzenLauncher",
+    "homepage": "https://github.com/SacrificeOff/SkyModdedS3",
     "bugs": {
-        "url": "https://github.com/NewzenMC/NewzenLauncher/issues"
+        "url": "https://github.com/SacrificeOff/SkyModdedS3/issues"
     },
     "main": "index.js",
     "scripts": {
@@ -42,8 +42,8 @@
     "devDependencies": {
         "cross-env": "^7.0.3",
         "ejs-lint": "^2.0.0",
-        "electron": "^22.1.0",
-        "electron-builder": "^23.6.0",
+        "electron": "^22.3.9",
+        "electron-builder": "^24.4.0",
         "eslint": "^8.32.0",
         "eslint-config-standard": "^17.0.0",
         "eslint-plugin-import": "^2.26.0",
@@ -53,6 +53,6 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/NewzenMC/NewzenLauncher.git"
+        "url": "git+https://github.com/SacrificeOff/SkyModdedS3.git"
     }
 }
