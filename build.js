@@ -23,10 +23,10 @@ builder
             : getCurrentPlatform()
         ).createTarget(),
         config: {
-            appId: 'newzenlauncher',
-            productName: 'NewzenLauncher',
+            appId: 'skymoddedlauncher',
+            productName: 'SkyModdedS3Launcher',
             artifactName: '${productName}-setup-${version}.${ext}',
-            copyright: 'Copyright © 2021 Newzen',
+            copyright: 'Copyright © 2023 Sacrifice_Off',
             directories: {
                 buildResources: 'build',
                 output: 'dist'
